@@ -1,7 +1,9 @@
 package com.nava.homework.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
+
+import javax.persistence.*;
 
 @Entity
 @Builder
@@ -9,7 +11,6 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Picture {
 
     @Id

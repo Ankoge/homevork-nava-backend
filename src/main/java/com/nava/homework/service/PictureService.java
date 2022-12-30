@@ -17,7 +17,6 @@ public class PictureService {
     private final ViewService viewService;
 
 
-    @Autowired
     public PictureService(PictureRepository pictureRepository, ViewService viewService) {
         this.pictureRepository = pictureRepository;
         this.viewService = viewService;

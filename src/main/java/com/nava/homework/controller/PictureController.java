@@ -4,12 +4,11 @@ import com.nava.homework.controller.dto.PictureDto;
 import com.nava.homework.model.Picture;
 import com.nava.homework.service.PictureService;
 import com.nava.homework.service.exeption.PictureNotFound;
-import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,7 +17,6 @@ import java.util.Optional;
 public class PictureController {
     private final PictureService pictureService;
 
-    @Autowired
     public PictureController(PictureService pictureService) {
         this.pictureService = pictureService;
     }
